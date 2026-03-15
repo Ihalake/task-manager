@@ -33,12 +33,11 @@ function createTaskManager(){
             setTimeout(() => {
                 callback([...tasks]);
             }, 1000);
-        }    
-
-    };
-
-        },              
+        },    
 
     }
-
 };
+    
+
+
+
