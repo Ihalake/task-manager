@@ -14,7 +14,11 @@ function createTaskManager(){
             tasks.push(newTask); // added new task to my private array tasks
             return newTask;
         },
-       
+        addTasks(...items){
+
+                items.forEach(item => addTask(item));
+        },
+
                     
         listTasks() {
             return [...tasks];
