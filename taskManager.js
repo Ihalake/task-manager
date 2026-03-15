@@ -26,16 +26,19 @@ function createTaskManager(){
         removeTask(id){// create a new array without the removed task
             tasks = tasks.filter(task => task.id !== id);
          
+
         },  
-        saveTasks(callback){
+        saveTasks(callback) {
             console.log("Saving to 'server'...");
             setTimeout(() => {
-                callback(tasks); 
+                callback([...tasks]);
             }, 1000);
-       
-        }          
+        }    
 
     };
 
+        },              
+
+    }
 
 };
