@@ -16,7 +16,7 @@ function createTaskManager(){
         },
         addTasks(...items){
 
-                items.forEach(item => addTask(item));
+                items.forEach(item => this.addTask(item));
         },
 
                     
